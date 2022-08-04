@@ -1,0 +1,8 @@
+name: pulumi-test
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: A minimal AWS Python Pulumi program
+backend:
+  url: s3://pulumi-states-797131139256

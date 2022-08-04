@@ -1,0 +1,5 @@
+encryptionsalt: v1:lZcZLLlAJFI=:v1:WSXxPItkBhtlGPKE:wJPVOhxMJOmBtEZqkoJubtKux7PX1A==
+config:
+  aws:region: ap-south-1
+  pulumi-test:api_op_bucket: api-intg-output-{account}-poc
+  pulumi-test:glue_scripts_bucket: glue-scripts-{account}-poc
