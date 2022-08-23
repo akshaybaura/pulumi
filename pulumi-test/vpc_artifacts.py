@@ -18,6 +18,6 @@ def vpc():
     return vpc
 
 def get_subnet_sg(vpc):
-  subnet = aws.ec2.get_subnet(id=vpc.private_subnet_ids[0])
+  subnet = aws.ec2.get_subnet(id=vpc.private_subnet_ids.apply(lambda subnet: subnet[0]))
   security_group = aws.ec2.get_security_group(vpc_id=vpc.vpc_id)
   return subnet, security_group
